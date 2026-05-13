@@ -89,7 +89,7 @@ async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     name = context.user_data.get('name', 'друже')
  
     response = client.messages.create(
-        model="claude-3-5-sonnet-latest",
+        model="claude-3-5-sonnet-20241022",
         max_tokens=500,
         messages=[{
             "role": "user",
@@ -144,7 +144,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif "Порада дня" in text:
         goal = context.user_data.get('goal', 'підтримати вагу')
         response = client.messages.create(
-            model="claude-3-5-sonnet-latest",
+            model="claude-3-5-sonnet-20241022",
             max_tokens=300,
             messages=[{
                 "role": "user",
@@ -171,7 +171,7 @@ async def handle_products(update: Update, context: ContextTypes.DEFAULT_TYPE):
     time_limit = "до 15 хвилин" if quick_mode else "різний час приготування"
  
     response = client.messages.create(
-        model="claude-3-5-sonnet-latest",
+        model="claude-3-5-sonnet-20241022",
         max_tokens=1000,
         messages=[{
             "role": "user",
@@ -218,7 +218,7 @@ async def handle_recipe_button(update: Update, context: ContextTypes.DEFAULT_TYP
     await query.message.reply_text("📝 Готую покроковий рецепт...")
  
     response = client.messages.create(
-        model="claude-3-5-sonnet-latest",
+        model="claude-3-5-sonnet-20241022",
         max_tokens=800,
         messages=[{
             "role": "user",
