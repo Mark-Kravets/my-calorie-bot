@@ -1,6 +1,5 @@
-python-telegram-bot==20.7
-groq
+python-telegram-bot==21.1.1
 stripe
 httpx
+groq
 flask
-openai
