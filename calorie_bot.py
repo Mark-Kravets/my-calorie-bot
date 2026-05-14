@@ -251,7 +251,7 @@ def main():
     # Запуск Flask у фоні
     threading.Thread(target=run_flask, daemon=True).start()
 
-    # Запуск Telegram бот
+    # Створення додатку
     app = Application.builder().token(TELEGRAM_TOKEN).build()
     
     conv = ConversationHandler(
@@ -267,8 +267,10 @@ def main():
     )
 
     app.add_handler(conv)
-    logging.info("Bot is running...")
-    app.run_polling()
+    
+    # Використовуємо print, щоб точно бачити запуск в логах
+    print("--- БОТ ЗАПУЩЕНИЙ ТА ГОТОВИЙ ДО РОБОТИ ---")
+    app.run_polling(drop_pending_updates=True)
 
 if __name__ == '__main__':
     main()
