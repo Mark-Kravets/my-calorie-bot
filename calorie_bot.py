@@ -27,10 +27,12 @@ from telegram.ext import (
 
 # --- НАЛАШТУВАННЯ КЛЮЧІВ ---
 # Рекомендую використовувати os.environ.get("KEY_NAME")
-TELEGRAM_TOKEN = os.environ.get("8702430350:AAHoyZEziiW7j6Q-umwE3whLmJAcK73ALHw")
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
-STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
+# ПРАВИЛЬНИЙ ВАРІАНТ (якщо вставляєш ключі прямо в код):
+
+TELEGRAM_TOKEN = "8702430350:AAHoyZEziiW7j6Q-umwE3whLmJAcK73ALHw"
+GROQ_API_KEY = "ТУТ_ТВІЙ_КЛЮЧ_ВІД_GROQ"
+OPENROUTER_API_KEY = "ТУТ_ТВІЙ_КЛЮЧ_ВІД_OPENROUTER"
+STRIPE_SECRET_KEY = "ТУТ_ТВІЙ_КЛЮЧ_ВІД_STRIPE"
 BOT_USERNAME = "smart_kaloria_bot"
 
 # Ініціалізація клієнтів
