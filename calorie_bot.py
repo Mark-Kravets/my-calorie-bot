@@ -27,7 +27,7 @@ from telegram.ext import (
 
 # --- НАЛАШТУВАННЯ КЛЮЧІВ ---
 # Рекомендую використовувати os.environ.get("KEY_NAME")
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+TELEGRAM_TOKEN = os.environ.get("8702430350:AAHoyZEziiW7j6Q-umwE3whLmJAcK73ALHw")
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
